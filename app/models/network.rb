@@ -1,3 +1,12 @@
+# == Schema Information
+#
+# Table name: networks
+#
+#  id           :integer          not null, primary key
+#  call_letters :string
+#  channel      :integer
+#
+
 class Network < ActiveRecord::Base
   has_many :shows
 
