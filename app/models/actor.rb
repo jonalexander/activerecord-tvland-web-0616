@@ -16,9 +16,11 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-    self.characters.map do |char|
-      binding.pry
+    self.characters.map do |character|
+      "#{character.name} - #{character.show.name}"
     end
   end
+
+  # ["Khaleesi - Game of Thrones"]
 
 end
